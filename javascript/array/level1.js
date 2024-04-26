@@ -24,13 +24,12 @@ const AfterElementToRemove = arr.slice(0,2);
 
 // Q5 Check if all elements in the num  are even. Log "All even" or "Not all even" accordingly.
 const num = [6,4,2,10,12]
-let r = "ALL EVEN"
-const AllEven = num.filter((element) =>{
-   if(element % 2 !== 0){
-    r = "Not all even"
-   }});
-
-console.log(r)
+// 
+if (num.every((element) => element % 2 === 0)) {
+   console.log("All even");
+} else {
+   console.log("Not all even");
+}
 
 // Find the index of a specific element in the array. Log the index to the console. 
 //expected output: 3

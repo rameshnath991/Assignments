@@ -7,8 +7,8 @@ const arr =  [3,5,2]
 
 console.log(arr.length);
 
-const max = Math.max(...arr);
-console.log(max);
+// const max = Math.max(...arr);
+// console.log(max);
 
 
 //const arr =  [3,5,2]
