@@ -1,5 +1,6 @@
+import {Button, Input } from "@nextui-org/react";
 import NavBar from "@/components/navbar/page";
-import {Button, Input} from "@nextui-org/react";
+
 const Register = () => {
   return (
     <div>
@@ -13,7 +14,6 @@ const Register = () => {
         <Input type="enter password" label="Enter Password" /> <br/>
         <Input type="enter password" label="Conform Password" /> <br/>
         <Input type="enter address" label="address" /> <br/>
-        <Input type="email" label="Email" /> <br/>
         <Button color="secondary">
       Submit
     </Button>
