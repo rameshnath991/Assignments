@@ -6,7 +6,7 @@ const NavBar=()=> {
   return (
     <Navbar>
       <NavbarBrand>
-  
+  RAMESH
         <p className="font-bold text-inherit">COBRA</p>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
