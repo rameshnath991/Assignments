@@ -1,5 +1,6 @@
 import NavBar from "@/components/navbar/page"
-
+import { Button, Input } from "@nextui-org/react"
+import Link from "next/link"
 const Login = () => {
   return (
     <div>
