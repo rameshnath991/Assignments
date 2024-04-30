@@ -1,15 +1,19 @@
 import NavBar from "@/components/navbar/page"
 import { Button, Input } from "@nextui-org/react"
 import Link from "next/link"
-const Login = () => {
+const LogIn = () => {
   return (
-    <div>
+    <div className="flex justify-center ">
+    <div> 
         <NavBar/>
-        <input placeholder='enter password' type='password'/> <br/>
-        <input placeholder='enter email'/> <br/>
-        <button className="bg-black text-white m-4">Submit</button>
+        <Input type="email" label="Email" /> <br/>
+        <Input type="enter password" label="Enter Password" /> <br/>
+        <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
+      Log In
+    </Button>
+    </div>
     </div>
   )
 }
 
-export default Login
+export default LogIn
