@@ -1,5 +1,6 @@
 import {Button, Input } from "@nextui-org/react";
 import NavBar from "@/components/navbar/page";
+import Link from "next/link";
 
 const Register = () => {
   return (
@@ -15,8 +16,9 @@ const Register = () => {
         <Input type="enter password" label="Conform Password" /> <br/>
         <Input type="enter address" label="address" /> <br/>
         <Button color="secondary">
-      Submit
+      Register
     </Button>
+    {/*Already have an account? <Link herf= " /LogIn">Sign In </Link>instead.*/}
     </div>
     </div>
     </div>
