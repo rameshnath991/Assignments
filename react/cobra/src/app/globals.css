@@ -53,10 +53,6 @@ button.operator {
     color: #f0a500;
 }
 
-button.wide {
-    grid-column: span 2;
-}
-
 button.clear {
     grid-column: span 2;
     background-color: #f0a500;
@@ -68,12 +64,12 @@ button.clear:hover {
 }
 
 button.wide {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 h1 {
     text-align: center;
-    color: green;
+    color: rgb(120, 6, 6);
 }
 
 h2 {

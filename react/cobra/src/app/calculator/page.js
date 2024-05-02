@@ -23,31 +23,43 @@ const Calculator = () => {
 
     return (
         <>
-            <h1>COBRA</h1>
-            <h2>Calculator</h2>
+            <b><h1>COBRA-🐍</h1></b>
+            <b><h2>Calculator</h2></b>
             <div className="calculator">
 
                 <input type="text" className="form-control mb-3"
                     value={result} readOnly />
                 <div className="buttons">
+
+                        <button className="operator wide" id='clear' onClick={() => 
+                            handleClick('C')}>C</button>
+                        <button className="operator" onClick={() =>
+                            handleClick('CE')}>CE</button>
+                        <button className="operator" onClick={() => 
+                            handleClick('%')}>%</button>
+                        <button className="operator" onClick={() => 
+                            handleClick('/')}>/</button>
+
+
+
                     <button onClick={() =>
                         handleClick('7')}>7</button>
                     <button onClick={() =>
-                        handleClick('8')}>8</button>
+                        handleClick('8')}>8</button> 
                     <button onClick={() =>
                         handleClick('9')}>9</button>
-                    <button className="operator" onClick={() =>
-                        handleClick('CE')}>CE</button>
-
-
-                    <button onClick={() => 
-                        handleClick('4')}>4</button>
-                    <button onClick={() => 
-                        handleClick('5')}>5</button>
-                    <button onClick={() => 
-                        handleClick('6')}>6</button>
                     <button className="operator" onClick={() => 
-                        handleClick('/')}>/</button>
+                        handleClick('*')}>*</button>
+
+                    
+                        <button onClick={() => 
+                            handleClick('4')}>4</button>
+                        <button onClick={() => 
+                            handleClick('5')}>5</button>
+                        <button onClick={() => 
+                            handleClick('6')}>6</button>
+                        <button className="operator" onClick={() => 
+                            handleClick('-')}>-</button>
 
 
                     <button onClick={() => 
@@ -57,27 +69,18 @@ const Calculator = () => {
                     <button onClick={() => 
                         handleClick('3')}>3</button>
                     <button className="operator" onClick={() => 
-                        handleClick('*')}>*</button>
-
-
-                    <button onClick={() => 
-                        handleClick('0')}>0</button>
-                    <button onClick={() => 
-                        handleClick('.')}>.</button>
-                    <button onClick={() => 
-                        handleClick('00')}>00</button>
-
-                    <button className="operator" onClick={() => 
-                        handleClick('-')}>-</button>
-                    <button className="operator wide" id='clear' onClick={() => 
-                        handleClick('C')}>C</button>
-
-                    <button className="operator" onClick={() => 
-                        handleClick('=')}>=</button>
-
-                    <button className="operator" onClick={() => 
                         handleClick('+')}>+</button>
 
+
+                        <button onClick={() => 
+                            handleClick('0')}>0</button>
+                        <button onClick={() => 
+                            handleClick('.')}>.</button>
+                        <button onClick={() => 
+                            handleClick('00')}>00</button>
+                        <button className="operator" onClick={() => 
+                            handleClick('=')}>=</button>
+                    
                 </div>
             </div>
         </>
