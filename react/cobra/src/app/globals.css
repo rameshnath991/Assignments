@@ -2,10 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
-.form{
-  background-color: red;
-  margin: 10px;
-  padding: 3px;
-  width: 400px;
+
+.calculator {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #02010b;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px rgba(29, 22, 219, 0.38);
 }
 
+.calculator input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: right;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background-color: #c8bde9;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #8f8989;
+}
+
+button:hover,
+button.operator:hover {
+    background-color: #616ccf;
+}
+
+button.operator {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #273634;
+    color: #f0a500;
+}
+
+button.wide {
+    grid-column: span 2;
+}
+
+button.clear {
+    grid-column: span 2;
+    background-color: #f0a500;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #aa9468;
+}
+
+button.wide {
+    grid-column: span 2;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+h2 {
+    text-align: center;
+}
