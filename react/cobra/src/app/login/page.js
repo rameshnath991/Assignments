@@ -13,7 +13,7 @@ const LogIn = () => {
         <Button radius="full" color="primary">
         LogIn
     </Button><br/>
-    {/*Don't have an account yet,<Link herf="/register">Sign Up</Link> instead.*/}
+    <p> Don't have an account yet,</p><Link href="/register">Sign Up</Link> instead.
     </div>
     </div>
     </div>

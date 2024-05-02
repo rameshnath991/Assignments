@@ -18,7 +18,7 @@ const Register = () => {
         <Button color="secondary">
       Register
     </Button>
-    {/*Already have an account? <Link herf= " /LogIn">Sign In </Link>instead.*/}
+    <p>Already have an account? </p> <Link href= " /LogIn">Sign In </Link>instead.
     </div>
     </div>
     </div>

@@ -1,15 +1,15 @@
-
+import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
-
-const NavBar=( props )=> {
+const NavBar=(props)=> {
   console.log(props)
   return (
-    <Navbar>
+    <Navbar position="static">
       <NavbarBrand>
+       
         <p className="font-bold text-inherit">COBRA</p>
       </NavbarBrand>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
