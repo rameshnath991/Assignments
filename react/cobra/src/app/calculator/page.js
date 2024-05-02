@@ -16,7 +16,10 @@ const Calculator = () => {
             setResult('');
         } else if (value === 'CE') {
             setResult(result.slice(0, -1));
-        } else {
+        } 
+        else if (value === '%') {
+            setResult(result * value/100 )
+        }else {
             setResult(result + value);
         }
     };
