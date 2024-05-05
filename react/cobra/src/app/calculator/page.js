@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import '../globals.css';
 import React, { useState } from 'react';
 
@@ -18,7 +18,7 @@ const Calculator = () => {
             setResult(result.slice(0, -1));
         } 
         else if (value === '%') {
-            setResult(result * value/100 )
+            setResult(result * setResult/100 )
         }else {
             setResult(result + value);
         }

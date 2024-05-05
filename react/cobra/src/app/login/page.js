@@ -1,5 +1,5 @@
 import NavBar from "@/components/navbar/page"
-import { Button, Input } from "@nextui-org/react"
+import { Button, Input } from "@nextui-org/react";
 import Link from "next/link"
 const login = () => {
   return ( 
@@ -11,7 +11,7 @@ const login = () => {
         
         <Input type="email" label="Email" /> <br/>
         <Input type="enter password" label="Enter Password" /> <br/>
-        <Button color="primary">
+        <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
       LogIn
     </Button>
     <p> Don't have an account yet,</p><Link href="/register"><Button color="primary" variant="light">
